@@ -101,6 +101,12 @@
     <None Include="PersonalDataEntity.edmx.diagram">
       <DependentUpon>PersonalDataEntity.edmx</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\frmPersonal_information.datasource" />
+    <None Include="Properties\DataSources\personalData.datasource" />
+    <None Include="Properties\DataSources\PersonalDataEntities.datasource" />
+    <None Include="Properties\DataSources\personalInformation.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\personalInformation.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

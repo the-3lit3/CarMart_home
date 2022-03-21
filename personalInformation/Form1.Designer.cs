@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
@@ -54,6 +55,24 @@
             this.lblDollarSign3 = new System.Windows.Forms.Label();
             this.lblTotalPaid = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.dgCarRentalInfo = new System.Windows.Forms.DataGridView();
+            this.personalDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.frmPersonalinformationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fIRSTNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lASTNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cARMODELDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dATEOFBIRTHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aGEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rENTALDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rETURNDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dEPOSITDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lATERETURNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bALANCEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tOTALPAIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCarRentalInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personalDataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frmPersonalinformationBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtFirstName
@@ -74,7 +93,7 @@
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSave.Font = new System.Drawing.Font("Britannic Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(44, 415);
+            this.btnSave.Location = new System.Drawing.Point(44, 609);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 2;
@@ -198,7 +217,7 @@
             this.lblDisplay.AutoSize = true;
             this.lblDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lblDisplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblDisplay.Location = new System.Drawing.Point(919, 323);
+            this.lblDisplay.Location = new System.Drawing.Point(912, 552);
             this.lblDisplay.Name = "lblDisplay";
             this.lblDisplay.Size = new System.Drawing.Size(54, 16);
             this.lblDisplay.TabIndex = 18;
@@ -210,7 +229,7 @@
             this.lblDepositDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lblDepositDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDepositDisplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblDepositDisplay.Location = new System.Drawing.Point(780, 323);
+            this.lblDepositDisplay.Location = new System.Drawing.Point(773, 552);
             this.lblDepositDisplay.Name = "lblDepositDisplay";
             this.lblDepositDisplay.Size = new System.Drawing.Size(61, 16);
             this.lblDepositDisplay.TabIndex = 17;
@@ -241,7 +260,7 @@
             this.lblBalance.AutoSize = true;
             this.lblBalance.BackColor = System.Drawing.Color.Red;
             this.lblBalance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblBalance.Location = new System.Drawing.Point(916, 352);
+            this.lblBalance.Location = new System.Drawing.Point(909, 581);
             this.lblBalance.Name = "lblBalance";
             this.lblBalance.Size = new System.Drawing.Size(57, 16);
             this.lblBalance.TabIndex = 22;
@@ -253,7 +272,7 @@
             this.lblBalanceDisplay.BackColor = System.Drawing.Color.Red;
             this.lblBalanceDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBalanceDisplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblBalanceDisplay.Location = new System.Drawing.Point(777, 352);
+            this.lblBalanceDisplay.Location = new System.Drawing.Point(770, 581);
             this.lblBalanceDisplay.Name = "lblBalanceDisplay";
             this.lblBalanceDisplay.Size = new System.Drawing.Size(68, 18);
             this.lblBalanceDisplay.TabIndex = 21;
@@ -262,7 +281,7 @@
             // lblDollarSign2
             // 
             this.lblDollarSign2.AutoSize = true;
-            this.lblDollarSign2.Location = new System.Drawing.Point(892, 323);
+            this.lblDollarSign2.Location = new System.Drawing.Point(885, 552);
             this.lblDollarSign2.Name = "lblDollarSign2";
             this.lblDollarSign2.Size = new System.Drawing.Size(14, 16);
             this.lblDollarSign2.TabIndex = 23;
@@ -271,7 +290,7 @@
             // lblDollarSign
             // 
             this.lblDollarSign.AutoSize = true;
-            this.lblDollarSign.Location = new System.Drawing.Point(892, 352);
+            this.lblDollarSign.Location = new System.Drawing.Point(885, 581);
             this.lblDollarSign.Name = "lblDollarSign";
             this.lblDollarSign.Size = new System.Drawing.Size(14, 16);
             this.lblDollarSign.TabIndex = 24;
@@ -280,7 +299,7 @@
             // lblDollarSign3
             // 
             this.lblDollarSign3.AutoSize = true;
-            this.lblDollarSign3.Location = new System.Drawing.Point(892, 385);
+            this.lblDollarSign3.Location = new System.Drawing.Point(885, 614);
             this.lblDollarSign3.Name = "lblDollarSign3";
             this.lblDollarSign3.Size = new System.Drawing.Size(14, 16);
             this.lblDollarSign3.TabIndex = 27;
@@ -291,7 +310,7 @@
             this.lblTotalPaid.AutoSize = true;
             this.lblTotalPaid.BackColor = System.Drawing.Color.Green;
             this.lblTotalPaid.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTotalPaid.Location = new System.Drawing.Point(916, 385);
+            this.lblTotalPaid.Location = new System.Drawing.Point(909, 614);
             this.lblTotalPaid.Name = "lblTotalPaid";
             this.lblTotalPaid.Size = new System.Drawing.Size(38, 16);
             this.lblTotalPaid.TabIndex = 26;
@@ -303,17 +322,150 @@
             this.lblTotal.BackColor = System.Drawing.Color.ForestGreen;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTotal.Location = new System.Drawing.Point(777, 385);
+            this.lblTotal.Location = new System.Drawing.Point(770, 614);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(60, 18);
             this.lblTotal.TabIndex = 25;
             this.lblTotal.Text = "TOTAL";
             // 
+            // dgCarRentalInfo
+            // 
+            this.dgCarRentalInfo.AutoGenerateColumns = false;
+            this.dgCarRentalInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgCarRentalInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.fIRSTNAMEDataGridViewTextBoxColumn,
+            this.lASTNAMEDataGridViewTextBoxColumn,
+            this.cARMODELDataGridViewTextBoxColumn,
+            this.dATEOFBIRTHDataGridViewTextBoxColumn,
+            this.aGEDataGridViewTextBoxColumn,
+            this.rENTALDATEDataGridViewTextBoxColumn,
+            this.rETURNDATEDataGridViewTextBoxColumn,
+            this.dEPOSITDataGridViewTextBoxColumn,
+            this.lATERETURNDataGridViewTextBoxColumn,
+            this.bALANCEDataGridViewTextBoxColumn,
+            this.tOTALPAIDDataGridViewTextBoxColumn});
+            this.dgCarRentalInfo.DataSource = this.personalDataBindingSource;
+            this.dgCarRentalInfo.Location = new System.Drawing.Point(44, 151);
+            this.dgCarRentalInfo.Name = "dgCarRentalInfo";
+            this.dgCarRentalInfo.RowHeadersWidth = 51;
+            this.dgCarRentalInfo.RowTemplate.Height = 24;
+            this.dgCarRentalInfo.Size = new System.Drawing.Size(929, 383);
+            this.dgCarRentalInfo.TabIndex = 28;
+            // 
+            // personalDataBindingSource
+            // 
+            this.personalDataBindingSource.DataSource = typeof(personalInformation.personalData);
+            // 
+            // frmPersonalinformationBindingSource
+            // 
+            this.frmPersonalinformationBindingSource.DataSource = typeof(personalInformation.frmPersonal_information);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Visible = false;
+            this.idDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // fIRSTNAMEDataGridViewTextBoxColumn
+            // 
+            this.fIRSTNAMEDataGridViewTextBoxColumn.DataPropertyName = "FIRST_NAME";
+            this.fIRSTNAMEDataGridViewTextBoxColumn.HeaderText = "FIRST NAME";
+            this.fIRSTNAMEDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.fIRSTNAMEDataGridViewTextBoxColumn.Name = "fIRSTNAMEDataGridViewTextBoxColumn";
+            this.fIRSTNAMEDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // lASTNAMEDataGridViewTextBoxColumn
+            // 
+            this.lASTNAMEDataGridViewTextBoxColumn.DataPropertyName = "LAST_NAME";
+            this.lASTNAMEDataGridViewTextBoxColumn.HeaderText = "LAST NAME";
+            this.lASTNAMEDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.lASTNAMEDataGridViewTextBoxColumn.Name = "lASTNAMEDataGridViewTextBoxColumn";
+            this.lASTNAMEDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // cARMODELDataGridViewTextBoxColumn
+            // 
+            this.cARMODELDataGridViewTextBoxColumn.DataPropertyName = "CAR_MODEL";
+            this.cARMODELDataGridViewTextBoxColumn.HeaderText = "CAR MODEL";
+            this.cARMODELDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cARMODELDataGridViewTextBoxColumn.Name = "cARMODELDataGridViewTextBoxColumn";
+            this.cARMODELDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.cARMODELDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.cARMODELDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dATEOFBIRTHDataGridViewTextBoxColumn
+            // 
+            this.dATEOFBIRTHDataGridViewTextBoxColumn.DataPropertyName = "DATE_OF_BIRTH";
+            this.dATEOFBIRTHDataGridViewTextBoxColumn.HeaderText = "D.O.B";
+            this.dATEOFBIRTHDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dATEOFBIRTHDataGridViewTextBoxColumn.Name = "dATEOFBIRTHDataGridViewTextBoxColumn";
+            this.dATEOFBIRTHDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // aGEDataGridViewTextBoxColumn
+            // 
+            this.aGEDataGridViewTextBoxColumn.DataPropertyName = "AGE";
+            this.aGEDataGridViewTextBoxColumn.HeaderText = "AGE";
+            this.aGEDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.aGEDataGridViewTextBoxColumn.Name = "aGEDataGridViewTextBoxColumn";
+            this.aGEDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // rENTALDATEDataGridViewTextBoxColumn
+            // 
+            this.rENTALDATEDataGridViewTextBoxColumn.DataPropertyName = "RENTAL_DATE";
+            this.rENTALDATEDataGridViewTextBoxColumn.HeaderText = "RENTAL DATE";
+            this.rENTALDATEDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.rENTALDATEDataGridViewTextBoxColumn.Name = "rENTALDATEDataGridViewTextBoxColumn";
+            this.rENTALDATEDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // rETURNDATEDataGridViewTextBoxColumn
+            // 
+            this.rETURNDATEDataGridViewTextBoxColumn.DataPropertyName = "RETURN_DATE";
+            this.rETURNDATEDataGridViewTextBoxColumn.HeaderText = "RETURN DATE";
+            this.rETURNDATEDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.rETURNDATEDataGridViewTextBoxColumn.Name = "rETURNDATEDataGridViewTextBoxColumn";
+            this.rETURNDATEDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dEPOSITDataGridViewTextBoxColumn
+            // 
+            this.dEPOSITDataGridViewTextBoxColumn.DataPropertyName = "DEPOSIT";
+            this.dEPOSITDataGridViewTextBoxColumn.HeaderText = "DEPOSIT";
+            this.dEPOSITDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dEPOSITDataGridViewTextBoxColumn.Name = "dEPOSITDataGridViewTextBoxColumn";
+            this.dEPOSITDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // lATERETURNDataGridViewTextBoxColumn
+            // 
+            this.lATERETURNDataGridViewTextBoxColumn.DataPropertyName = "LATE_RETURN";
+            this.lATERETURNDataGridViewTextBoxColumn.HeaderText = "LATE RETURN DATE";
+            this.lATERETURNDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.lATERETURNDataGridViewTextBoxColumn.Name = "lATERETURNDataGridViewTextBoxColumn";
+            this.lATERETURNDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // bALANCEDataGridViewTextBoxColumn
+            // 
+            this.bALANCEDataGridViewTextBoxColumn.DataPropertyName = "BALANCE";
+            this.bALANCEDataGridViewTextBoxColumn.HeaderText = "BALANCE";
+            this.bALANCEDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.bALANCEDataGridViewTextBoxColumn.Name = "bALANCEDataGridViewTextBoxColumn";
+            this.bALANCEDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // tOTALPAIDDataGridViewTextBoxColumn
+            // 
+            this.tOTALPAIDDataGridViewTextBoxColumn.DataPropertyName = "TOTAL_PAID";
+            this.tOTALPAIDDataGridViewTextBoxColumn.HeaderText = "TOTAL PAID";
+            this.tOTALPAIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tOTALPAIDDataGridViewTextBoxColumn.Name = "tOTALPAIDDataGridViewTextBoxColumn";
+            this.tOTALPAIDDataGridViewTextBoxColumn.Width = 125;
+            // 
             // frmPersonal_information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1012, 450);
+            this.ClientSize = new System.Drawing.Size(1060, 652);
+            this.Controls.Add(this.dgCarRentalInfo);
             this.Controls.Add(this.lblDollarSign3);
             this.Controls.Add(this.lblTotalPaid);
             this.Controls.Add(this.lblTotal);
@@ -342,6 +494,10 @@
             this.Controls.Add(this.txtFirstName);
             this.Name = "frmPersonal_information";
             this.Text = "Personal Information";
+            this.Load += new System.EventHandler(this.frmPersonal_information_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgCarRentalInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personalDataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frmPersonalinformationBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,6 +531,21 @@
         private System.Windows.Forms.Label lblDollarSign3;
         private System.Windows.Forms.Label lblTotalPaid;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.DataGridView dgCarRentalInfo;
+        private System.Windows.Forms.BindingSource personalDataBindingSource;
+        private System.Windows.Forms.BindingSource frmPersonalinformationBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fIRSTNAMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lASTNAMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn cARMODELDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dATEOFBIRTHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aGEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rENTALDATEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rETURNDATEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dEPOSITDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lATERETURNDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bALANCEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tOTALPAIDDataGridViewTextBoxColumn;
     }
 }
 

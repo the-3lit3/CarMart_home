@@ -59,7 +59,12 @@ namespace personalInformation
             lblTotalPaid.Text = nxt.TOTAL_PAID;
             
             MessageBox.Show("Success");
-        }       
-        
+        }
+
+        private void frmPersonal_information_Load(object sender, EventArgs e)
+        {
+            personalData nxt2 = new personalData();
+
+        }
     }
 }
