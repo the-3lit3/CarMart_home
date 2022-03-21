@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2C915956-5C18-440B-B648-CCE97BC40DA7}</ProjectGuid>
+    <ProjectGuid>{9592EB43-A6B0-4DA3-B5FF-584971112618}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CarMart_home</RootNamespace>
-    <AssemblyName>CarMart_home</AssemblyName>
+    <RootNamespace>personalInformation</RootNamespace>
+    <AssemblyName>personalInformation</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -55,52 +55,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="carMartDataEntity.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>carMartDataEntity.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="carMartDataEntity.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>carMartDataEntity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="carMartDataEntity.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>carMartDataEntity.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="CarMart_Home.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CarMart_Home.Designer.cs">
-      <DependentUpon>CarMart_Home.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personalData.cs">
+      <DependentUpon>PersonalDataEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalDataEntity.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonalDataEntity.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalDataEntity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonalDataEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalDataEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonalDataEntity.edmx</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sofCarMart.cs">
-      <DependentUpon>sofCarMartDataSource.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sofCarMartDataSource.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>sofCarMartDataSource.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sofCarMartDataSource.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>sofCarMartDataSource.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sofCarMartDataSource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>sofCarMartDataSource.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Table.cs">
-      <DependentUpon>carMartDataEntity.tt</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="CarMart_Home.resx">
-      <DependentUpon>CarMart_Home.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -111,14 +93,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="carMartDataEntity.edmx">
+    <EntityDeploy Include="PersonalDataEntity.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>carMartDataEntity.Designer.cs</LastGenOutput>
+      <LastGenOutput>PersonalDataEntity.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="carMartDataEntity.edmx.diagram">
-      <DependentUpon>carMartDataEntity.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
+    <None Include="PersonalDataEntity.edmx.diagram">
+      <DependentUpon>PersonalDataEntity.edmx</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -128,37 +110,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EntityDeploy Include="sofCarMartDataSource.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>sofCarMartDataSource.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="sofCarMartDataSource.edmx.diagram">
-      <DependentUpon>sofCarMartDataSource.edmx</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="carMartDataEntity.Context.tt">
+    <Content Include="PersonalDataEntity.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>carMartDataEntity.Context.cs</LastGenOutput>
-      <DependentUpon>carMartDataEntity.edmx</DependentUpon>
+      <LastGenOutput>PersonalDataEntity.Context.cs</LastGenOutput>
+      <DependentUpon>PersonalDataEntity.edmx</DependentUpon>
     </Content>
-    <Content Include="carMartDataEntity.tt">
+    <Content Include="PersonalDataEntity.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>carMartDataEntity.edmx</DependentUpon>
-      <LastGenOutput>carMartDataEntity.cs</LastGenOutput>
-    </Content>
-    <Content Include="sofCarMartDataSource.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>sofCarMartDataSource.edmx</DependentUpon>
-      <LastGenOutput>sofCarMartDataSource.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="sofCarMartDataSource.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>sofCarMartDataSource.edmx</DependentUpon>
-      <LastGenOutput>sofCarMartDataSource.cs</LastGenOutput>
+      <DependentUpon>PersonalDataEntity.edmx</DependentUpon>
+      <LastGenOutput>PersonalDataEntity.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
